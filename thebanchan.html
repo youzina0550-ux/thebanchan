@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맛있는 여유, 더반찬&</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/thebanchan.css">
+
+    <script src="js/thebanchan.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="event_banner">
+        <div class="event">
+            <p><a href=""><span>첫 가입 선물! 3,900원으로 반찬 4종 득템하세요!</span></a></p>
+            <p class="close"><a href="" id="closeBtn">오늘 그만 보기 X</a></p>
+        </div>
+    </div>
+    <div class="wrap">
+        <header>
+            <div class="top">
+                <ul>
+                    <li><a href="">로그인 / 회원가입</a></li>
+                    <li><a href="">고객센터</a></li>
+                    <li><a href="">배송지역 검색</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="bottom_left">
+                    <div class="logo">
+                        <h1><a href=""><img src="img/main_logo.gif" alt=""></a></h1>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="이제, 장보기는 더반찬&">
+                        <img src="img/ico/ico_search.png" alt="">
+                        <ul class="search-dropdown">
+                            <li class="ai_keyword">
+                                AI 추천 키워드 <a href="" class="tool_tip_ico"></a>
+                                <ul>
+                                    <li>간편해요</li>
+                                    <li>저렴해요</li>
+                                    <li>자주 시켜요</li>
+                                    <li>가성비 좋아요</li>
+                                    <li>깔끔 담백해요</li>
+                                </ul>
+                                <div class="tool_tip">
+                                    <p>
+                                        후기 내 가장 많이 언급된 키워드로 <br>
+                                        추천 검색어를 제공해드려요
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="search-last">
+                                <p>최근 검색어</p>
+                                <p>최근 검색어가 없습니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom_right">
+                    <a href=""><img src="img/ico/ico_user.png" alt=""></a>
+                    <a href=""><img src="img/ico/ico_layers.png" alt=""></a>
+                    <div class="hover-box">
+                        <h3>최근 본 상품</h3>
+                        <span class="mark">!</span>
+                        <p>최근 본 상품이 없습니다</p>
+                    </div>
+                    <a href=""><img src="img/ico/ico_cart.png" alt=""><span class="count"></span></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="category">
+            <button id="categoryBtn"><img src="img/ico/ico_menu.png" alt="">카테고리</button>
+            <div class="category_list" id="categoryList">
+                <ul class="category_hover_list">
+                    <li>
+                        <img src="img/ico/category_list1-1.png" data-hover="img/ico/category_list1-2.png"
+                            data-default="img/ico/category_list1-1.png" alt="" alt="">명절음식
+                        </li>
+                    <li>
+                        <img src="img/ico/category_list2-1.png" data-hover="img/ico/category_list2-2.png"
+                            data-default="img/ico/category_list2-1.png" alt="">선물세트
+                    </li>
+                    <li>
+                        <img src="img/ico/category_list3-1.png" data-hover="img/ico/category_list3-2.png"
+                            data-default="img/ico/category_list3-1.png" alt="">밑반찬
+                    </li>
+                    <li>
+                        <img src="img/ico/category_list4-1.png" data-hover="img/ico/category_list4-2.png"
+                            data-default="img/ico/category_list4-1.png" alt="">김치&middot;젓갈&middot;절임
+                    </li>
+                    <li>
+                        <img src="img/ico/category_list5-1.png" data-hover="img/ico/category_list5-2.png"
+                            data-default="img/ico/category_list5-1.png" alt="">메인요리&middot;밀키트
+                    </li>
+                    <li>
+                        <img src="img/ico/category_list6-1.png" data-hover="img/ico/category_list6-2.png"
+                            data-default="img/ico/category_list6-1.png" alt="">국&middot;탕&middot;찌개
+                    </li>
+                    <li>
+                        <img src="img/ico/category_list7-1.png" data-hover="img/ico/category_list7-2.png"
+                            data-default="img/ico/category_list7-1.png" alt="">간편식
+                    </li>
+                    <li>
+                        <img src="img/ico/category_list8-1.png" data-hover="img/ico/category_list8-2.png"
+                            data-default="img/ico/category_list8-1.png" alt="">식재료
+                    </li>
+                    <li>
+                        <img src="img/ico/category_list9-1.png" data-hover="img/ico/category_list9-2.png"
+                            data-default="img/ico/category_list9-1.png" alt="">간식&middot;떡&middot;음료
+                    </li>
+                    <li>
+                        <img src="img/ico/category_list10-1.png" data-hover="img/ico/category_list10-2.png"
+                            data-default="img/ico/category_list10-1.png" alt="">정육
+                    </li>
+                    <li>
+                        <img src="img/ico/category_list11-1.png" data-hover="img/ico/category_list11-2.png"
+                            data-default="img/ico/category_list11-1.png" alt="">테마관
+                    </li>
+                </ul>
+            </div>
+            <ul class="menuBar">
+                <li><a href="">번쩍딜</a></li>
+                <li><a href="">추석명절</a></li>
+                <li><a href="">선물세트</a></li>
+                <li><a href="">오늘장보기</a></li>
+                <li><a href="">베스트</a></li>
+                <li><a href="">신상품</a></li>
+                <li><a href="">할인특가</a></li>
+                <li><a href="">산지직송</a></li>
+                <li><a href="">선물하기</a></li>
+                <li><a href="">혜택&middot;정보</a></li>
+                <li><a href="">기획전&middot;이벤트</a></li>
+                <li><a href="">후기라운지</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="main_content">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/main_content1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content5.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content6.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content7.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content8.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content9.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content10.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content11.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content12.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content13.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content14.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content15.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content16.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_content17.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination mainIndicator"></div>
+
+                    <!-- 커스텀 컨트롤러 -->
+                    <div class="swiper-controls">
+                        <button class="swiper-button-toggle"><img src="img/ico/ico_pause.png" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="deal">
+                    <div class="deal_header">
+                        <h3><a href="">번쩍딜⚡ 사라지기 전에 서두르세요!</a></h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <figure>
+                                    <img src="img/deal1.jpg" alt="">
+                                </figure>
+                                <p>[내일한정] 매콤애호박지짐(200g)</p>
+                                <div class="deal_price_text">
+                                    <span class="rate">7%</span>
+                                    <strong>6,410<span class="price">원</span></strong>
+                                    <s>6,900원</s>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <figure>
+                                    <img src="img/deal2.jpg" alt="">
+                                </figure>
+                                <p>[내일한정] 찹쌀콩강정(130g)</p>
+                                <div class="deal_price_text">
+                                    <span class="rate">10%</span>
+                                    <strong>6,210<span class="price">원</span></strong>
+                                    <s>6,900원</s>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <figure>
+                                    <img src="img/deal3.jpg" alt="">
+                                </figure>
+                                <p>[내일한정] 마늘쫑무침(120g)</p>
+                                <div class="deal_price_text">
+                                    <span class="rate">10%</span>
+                                    <strong>4,050<span class="price">원</span></strong>
+                                    <s>4,500원</s>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <figure>
+                                    <img src="img/deal4.jpg" alt="">
+                                </figure>
+                                <p>[내일한정] 흑임자연근무침(100g)</p>
+                                <div class="deal_price_text">
+                                    <span class="rate">7%</span>
+                                    <strong>3,620<span class="price">원</span></strong>
+                                    <s>3,900원</s>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md_recom">
+                    <h3>MD가 추천해드려요</h3>
+                    <ul class="md_recom_tab">
+                        <li><button class="active">이번 주 추천 상품!</button></li>
+                        <li><button>없으면 아쉬운</button></li>
+                        <li><button>풍성한 추석</button></li>
+                        <li><button>명절에 빠질수없는</button></li>
+                        <li><button>식감 좋은 나물반찬</button></li>
+                    </ul>
+
+                    <div class="md_recomArea1 active">
+                        <h4>금주의 추천 상품을 만나보세요.</h4>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="https://image.thebanchan.co.kr/dwmall/static_root/product_img/main/0037360/003736078_2_a.gif"
+                                        alt="">
+                                </figure>
+                                <p>한돈 보쌈수육(600g, 고기 180g)</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">40%</span>
+                                    <strong>6,540<span class="price">원</span></strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom1-2.jpg" alt="">
+                                </figure>
+                                <p>쇠고기옛날장조림(450g)</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">30%</span>
+                                    <strong>9,730<span class="price">원</span></strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom1-3.jpg" alt="">
+                                </figure>
+                                <p>밥도둑 한돈모둠장조림(250g)</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">20%</span>
+                                    <strong>5,520<span class="price">원</span></strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom1-4.jpg" alt="">
+                                </figure>
+                                <p>밥도둑양념생깻잎(150g)</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">20%</span>
+                                    <strong>5,520<span class="price">원</span></strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom1-5.jpg" alt="">
+                                </figure>
+                                <p>계란말이(210g)</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">20%</span>
+                                    <strong>3,920<span class="price">원</span></strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md_recomArea2">
+                        <h4>보글보글 찌개</h4>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom2-1.jpg" alt="">
+                                </figure>
+                                <p>한돈 돼지고기김치찌개</p>
+                                <div class="recom_price_text">
+                                    <strong>9,730원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom2-2.jpg" alt="">
+                                </figure>
+                                <p>차돌박이된장찌개(550g)</p>
+                                <div class="recom_price_text">
+                                    <strong>9,730원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom2-3.jpg" alt="">
+                                </figure>
+                                <p>싱글부대찌개(550g)</p>
+                                <div class="recom_price_text">
+                                    <strong>9,730원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom2-4.jpg" alt="">
+                                </figure>
+                                <p>[북창동순두부&더반찬]북창동순두부찌개(550g)</p>
+                                <div class="recom_price_text">
+                                    <strong>9,730원</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md_recomArea3">
+                        <h4>함께 즐기는 명절 밥상</h4>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom3-1.jpg" alt="">
+                                </figure>
+                                <p>한돈 돼지갈비찜(750g)</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">20%</span>
+                                    <strong>19,900원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <video
+                                        src="https://image.thebanchan.co.kr/dwmall/static_root/product_img/main/0038280/003828071_2_a.mp4"
+                                        autoplay="" loop="" muted="" playsinline="" width="150" height="150"
+                                        class=""></video>
+                                </figure>
+                                <p>우거지 감자탕(900g)</p>
+                                <div class="recom_price_text">
+                                    <strong>10,900원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom3-3.jpg" alt="">
+                                </figure>
+                                <p>[이달의 메인요리] 마늘 닭볶음탕(750g)</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">10%</span>
+                                    <strong>15,210원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom3-4.jpg" alt="">
+                                </figure>
+                                <p>[이달의 메인요리] 순살 찜닭(720g)</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">10%</span>
+                                    <strong>17,010원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom3-5.jpg" alt="">
+                                </figure>
+                                <p>소갈비찜(850g)</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">7%</span>
+                                    <strong>37,100원</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md_recomArea4">
+                        <h4>노릇노릇 전</h4>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom4-1.jpg" alt="">
+                                </figure>
+                                <p>꼬지전(200g)</p>
+                                <div class="recom_price_text">
+                                    <strong>11,900원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom4-2.jpg" alt="">
+                                </figure>
+                                <p>고소해 녹두전(360g)</p>
+                                <div class="recom_price_text">
+                                    <strong>10,900원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom4-3.jpg" alt="">
+                                </figure>
+                                <p>시그니처모듬전M</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">20%</span>
+                                    <strong>35,900원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom4-4.jpg" alt="">
+                                </figure>
+                                <p>시그니처모듬전S</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">7%</span>
+                                    <strong>24,000원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom4-5.gif" alt="">
+                                </figure>
+                                <p>광주별미소고기육전(240g)</p>
+                                <div class="recom_price_text">
+                                    <strong>14,500원</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md_recomArea5">
+                        <h4>향긋하게 즐겨요</h4>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom5-1.jpg" alt="">
+                                </figure>
+                                <p>고사리나물(100g)</p>
+                                <div class="recom_price_text">
+                                    <strong>4,900원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom5-2.jpg" alt="">
+                                </figure>
+                                <p>건곤드레나물볶음(100g)</p>
+                                <div class="recom_price_text">
+                                    <strong>4,900원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom5-3.jpg" alt="">
+                                </figure>
+                                <p>모둠두메산나물(219g)</p>
+                                <div class="recom_price_text">
+                                    <strong>10,500원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom5-4.jpg" alt="">
+                                </figure>
+                                <p>나물3종(210g)</p>
+                                <div class="recom_price_text">
+                                    <span class="rate">7%</span>
+                                    <strong>7,300원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/md_recom5-5.jpg" alt="">
+                                </figure>
+                                <p>건가지나물(85g)</p>
+                                <div class="recom_price_text">
+                                    <strong>4,900원</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="main_banner">
+                    <a href="">
+                        <img src="https://image.thebanchan.co.kr/dwmall/static_root/display_img/0211/0211_00000100286_ii_on_1_1.jpg?f=webp&q=80"
+                            alt="">
+                    </a>
+                </div>
+
+                <div class="new_pd">
+                    <div class="new">
+                        <h3><a href="">새로 들어왔어요</a></h3>
+                        <ul class="new_list">
+                            <li>
+                                <figure>
+                                    <img src="img/new1.jpg" alt="">
+                                </figure>
+                                <p>[추석]명절 소가족 세트(2~3인추천)</p>
+                                <div class="new_price_text">
+                                    <span class="rate">10%</span>
+                                    <strong>58,950원</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/new2.jpg" alt="">
+                                </figure>
+                                <p>[추석]명절 대가족 세트(4인추천)</p>
+                                <div class="new_price_text">
+                                    <span class="rate">10%</span>
+                                    <strong>68,310원</span></strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/new3.jpg" alt="">
+                                </figure>
+                                <p>시그니처모듬전M</p>
+                                <div class="new_price_text">
+                                    <span class="rate">20%</span>
+                                    <strong>35,900원</span></strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/new4.jpg" alt="">
+                                </figure>
+                                <p>시그니처모듬전S</p>
+                                <div class="new_price_text">
+                                    <span class="rate">7%</span>
+                                    <strong>24,000원</span></strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/new5.jpg" alt="">
+                                </figure>
+                                <p>정성담은탕평채(275g)</p>
+                                <div class="new_price_text">
+                                    <span class="rate">10%</span>
+                                    <strong>8,010원</span></strong>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/new6.jpg" alt="">
+                                </figure>
+                                <p>오색송편</p>
+                                <div class="new_price_text">
+                                    <strong>8,900원</span></strong>
+                                </div>
+                            </li>
+                    </div>
+
+                    <div class="rel">
+                        <h3>릴레이 한정특가</h3>
+                        <!-- Swiper -->
+                        <div class="rel_list">
+                            <a class="rel_box">
+                                <div class="swiper relSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <figure>
+                                                <img src="img/rel1.jpg" alt="">
+                                            </figure>
+                                            <div class="textArea">
+                                                <div class="time_cnt">
+                                                    <p class="txt">
+                                                        <span id="count_next"></span>
+                                                    </p>
+                                                </div>
+                                                <div class="rel_price_text">
+                                                    <p>시그니처모듬전M</p>
+                                                    <span class="rate">20%</span>
+                                                    <strong>35,900원</strong><span class="origin_price">44,900원</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <figure>
+                                                <img src="img/rel2.jpg" alt="">
+                                            </figure>
+                                            <div class="textArea">
+                                                <div class="time_cnt">
+                                                    <p class="txt">
+                                                        <span id="count_next"></span>
+                                                    </p>
+                                                </div>
+                                                <div class="rel_price_text">
+                                                    <p>양념소불고기(1kg)</p>
+                                                    <span class="rate">20%</span>
+                                                    <strong>19,900원</strong><span class="origin_price">24,900원</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_section">
+                    <div class="card_cont">
+                        <h4>
+                            <strong>산지직송</strong>
+                            제철에 더 맛있어요
+                        </h4>
+
+                        <div class="card_list">
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <img src="img/card1-1.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">[산지직송][청루원] 쫀득쫀득 명품 반건시 선물세트 (20입/30입/60입)</span>
+                                        <div class="card_price_text">
+                                            <span class="rate">24%</span>
+                                            <strong>9,730원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/card1-2.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">[산지직송][청루원] 명품 나주배 선물세트 모음(5kg/7.5kg)</span>
+                                        <div class="card_price_text">
+                                            <span class="rate">25%</span>
+                                            <strong>34,900원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/card1-3.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">[산지직송][청루원] 달콤한 명품 명절 과일 선물세트 모음전</span>
+                                        <div class="card_price_text">
+                                            <span class="rate">26%</span>
+                                            <strong>39,900원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/card1-4.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">[산지직송][청루원] 한우 혼합 선물세트 골라담기(1.2kg/1.6kg)</span>
+                                        <div class="card_price_text">
+                                            <span class="rate">25%</span>
+                                            <strong>119,000원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card_cont">
+                        <h4>
+                            <strong>임박특가</strong>
+                            저렴하게 득템해요
+                        </h4>
+
+                        <div class="card_list">
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <img src="img/card2-1.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">[소비기한 25.10.17] 전통쌈장 (120g)</span>
+                                        <div class="card_price_text">
+                                            <span class="rate">60%</span>
+                                            <strong>1,160원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/card2-2.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">[소비기한 25.10.17] 전통찹쌀고추장 (120g)</span>
+                                        <div class="card_price_text">
+                                            <span class="rate">60%</span>
+                                            <strong>1,560원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/card2-3.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">[소비기한 25.10.17] 우리콩전통된장 (120g)</span>
+                                        <div class="card_price_text">
+                                            <span class="rate">60%</span>
+                                            <strong>1,160원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/card2-4.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">[소비기한 25.10.22] 양념깐새우장 (300g)</span>
+                                        <div class="card_price_text">
+                                            <span class="rate">10%</span>
+                                            <strong>11,610원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card_cont">
+                        <h4>
+                            <strong>손이가는</strong>
+                            간식 쟁이기
+                        </h4>
+
+                        <div class="card_list">
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <img src="img/card3-1.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">고소한찹쌀콩강정(130g)</span>
+                                        <div class="card_price_text">
+                                            <span class="rate">10%</span>
+                                            <strong>6,210원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/card3-2.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">밤크림떡(360g)</span>
+                                        <div class="card_price_text">
+                                            <strong>12,900원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/card3-3.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">딸기크림떡(360g)</span>
+                                        <div class="card_price_text">
+                                            <strong>12,900원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/card3-4.jpg" alt="">
+                                    </figure>
+                                    <div class="card_textInfo">
+                                        <span class="card_title">[Live] 영양찰떡(500g)</span>
+                                        <div class="card_price_text">
+                                            <strong>12,900원</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theme">
+                    <h3>
+                        <a href="">
+                            이런 테마는 어때요?
+                        </a>
+                    </h3>
+
+                    <div class="swiper themeSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide_list">
+                                    <figure>
+                                        <img src="img/theme1.jpg" alt="">
+                                    </figure>
+                                    <p class="slide_text">더반찬& 시그니처</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_list">
+                                    <figure>
+                                        <img src="img/theme2.jpg" alt="">
+                                    </figure>
+                                    <p class="slide_text">더반찬Biz</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_list">
+                                    <figure>
+                                        <img src="img/theme3.jpg" alt="">
+                                    </figure>
+                                    <p class="slide_text">이달의 맛집</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_list">
+                                    <figure>
+                                        <img src="img/theme4.jpg" alt="">
+                                    </figure>
+                                    <p class="slide_text">1인 가구</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_list">
+                                    <figure>
+                                        <img src="img/theme5.jpg" alt="">
+                                    </figure>
+                                    <p class="slide_text">냉동실</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_list">
+                                    <figure>
+                                        <img src="img/theme6.jpg" alt="">
+                                    </figure>
+                                    <p class="slide_text">배송비 절약제품</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_list">
+                                    <figure>
+                                        <img src="img/theme7.jpg" alt="">
+                                    </figure>
+                                    <p class="slide_text">맛있는 夜식</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="monthly_goods">
+                    <div class="monthly_goods_list">
+                        <h3>
+                            <strong>조미료가 없는</strong>
+                            믿음직한 반찬
+                        </h3>
+
+                        <div class="swiper monthlySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly1-1.jpg" alt="">
+                                    </figure>
+                                    <p>[클린라벨] 가지무침(100g)</p>
+                                    <strong>3,900원</strong>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly1-2.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>[클린라벨] 김치전 반죽(400g)</p>
+                                        <strong>7,900원</strong>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly1-3.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>[클린라벨] 우렁강된장(200g)</p>
+                                        <strong>8,900원</strong>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly1-4.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>[Live] [클린라벨] 숙주나물(220g)</p>
+                                        <div class="monthly_price">
+                                            <p>10%</p>
+                                            <strong>3,510원</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly1-5.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>[클린라벨] 들깨느타리버섯볶음(130g)</p>
+                                        <div class="monthly_price">
+                                            <p>10%</p>
+                                            <strong>4,900원</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly1-6.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>[클린라벨] 매콤콩나물무침(220g)</p>
+                                        <strong>4,900원</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="monthly_goods_list">
+                        <h3>
+                            <strong>시원하고 깔끔한</strong>
+                            따뜻한 국
+                        </h3>
+
+                        <div class="swiper monthlySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly2-1.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>[Live] [클린라벨] 진한닭곰탕(550g)</p>
+                                        <strong>6,900원</strong>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly2-2.jpg" alt="">
+                                    </figure>
+                                    <p>[클린라벨] 맑은 소고기배추국(550g)</p>
+                                    <strong>6,900원</strong>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly2-3.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>황태해장국(550g)</p>
+                                        <strong>5,900원</strong>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly2-4.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>수제 콩나물김치국 (550g)</p>
+                                        <strong>5,900원</strong>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly2-5.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>[Live] 쇠고기무국(550g)</p>
+                                        <div class="monthly_price">
+                                            <p>7%</p>
+                                            <strong>6,410원</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="monthly_goods_list">
+                        <h3>
+                            <strong>바삭한 돈까스</strong>
+                            집밥의 완성
+                        </h3>
+
+                        <div class="swiper monthlySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly3-1.jpg" alt="">
+                                    </figure>
+                                    <p>통통살 가라아게(300g)</p>
+                                    <strong>5,900원</strong>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly3-2.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>통살치킨까스(300g, 소스포함)</p>
+                                        <strong>5,900원</strong>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly3-3.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>통살생선까스(270g)</p>
+                                        <strong>6,900원</strong>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly3-4.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>롱 돈까스(320g)</p>
+                                        <strong>7,900원</strong>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly3-5.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>고구마치즈돈까스(260g, 소스포함)</p>
+                                        <strong>7,900원</strong>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img src="img/monthly3-6.jpg" alt="">
+                                    </figure>
+                                    <div class="monthly_text">
+                                        <p>더블치즈돈까스(280g, 소스포함)</p>
+                                        <strong>7,900원</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviewArea">
+                    <h3><a href="">내돈내산 고객님의 선택은?</a></h3>
+
+                    <div class="swiper reviewSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review_box">
+                                    <figure>
+                                        <img src="img/review1.jpg" alt="">
+                                    </figure>
+                                    <div class="review_text">
+                                        <p>
+                                            신광동아재 고객님의 <strong>[시크릿특가] 모둠두메산나물(219g)</strong>
+                                        </p>
+                                        <p class="overflow">비빔밥 재료로 쓰이는 각종나물을 넣고 비벼 먹으니 옛날 생각이 나네요</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review_box">
+                                    <figure>
+                                        <img src="img/review2.jpg" alt="">
+                                    </figure>
+                                    <div class="review_text">
+                                        <p>
+                                            백*주 고객님의 <strong>[Live] 쇠고기무국(550g)</strong>
+                                        </p>
+                                        <p class="overflow">국물 양 진짜 넉넉해요 2명이 충분히 국물 먹을수있어요</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review_box">
+                                    <figure>
+                                        <img src="img/review3.jpg" alt="">
+                                    </figure>
+                                    <div class="review_text">
+                                        <p>
+                                            정*애 고객님의
+                                            <strong>[시크릿특가] 광주별미소고기육전(240g)</strong>
+                                        </p>
+                                        <p class="overflow">고기에서 냄새도 없고 부드럽고 맛있습니다. 비빔냉면이랑 함께 둘이 한끼먹기 괜찮은 양 입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review_box">
+                                    <figure>
+                                        <img src="img/review4.jpg" alt="">
+                                    </figure>
+                                    <div class="review_text">
+                                        <p>
+                                            이*정 고객님의
+                                            <strong>초계냉국(550g)</strong>
+                                        </p>
+                                        <p class="overflow">그냥 해동만 해서 먹으면 되니까 너무 시원하고 좋네요. 아이들은 조금 시긴 한데 냉면육수같고 시원해서 좋다고 했고, 전 딱 좋았어요. 여름이라 입맛없었는데 별미네요. 2팩주문하길 잘했어요 ^^</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_aside">
+                <!-- Swiper -->
+                <div class="swiper aside">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/main_aside1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_aside2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_aside3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main_aside4.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="aside_ico_list">
+                    <a href=""><i><img src="img/ico/ico_aside1.png" alt=""></i>명절음식</a>
+                    <a href=""><i><img src="img/ico/ico_aside2.png" alt=""></i>오늘장보기</a>
+                    <a href=""><i><img src="img/ico/ico_aside3.png" alt=""></i>반찬장보기</a>
+                    <a href=""><i><img src="img/ico/ico_aside4.png" alt=""></i>국물일상</a>
+                    <a href=""><i><img src="img/ico/ico_aside5.png" alt=""></i>선물하기</a>
+                    <a href=""><i><img src="img/ico/ico_aside6.png" alt=""></i>출석체크</a>
+                    <a href=""><i><img src="img/ico/ico_aside7.png" alt=""></i>후기라운지</a>
+                    <a href=""><i><img
+                                src="https://image.thebanchan.co.kr/tbcImg/web/images/common/quickmenu/live.gif?f=webp&q=80"
+                                alt=""></i>라이브</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-lately">
+                <div class="inner row-c">
+                    <div class="lately-col">
+                        <h3 class="lately-title">공지사항</h3>
+                        <div class="lately-sbj">
+                            <a href="" class="lately-anc">[공지] 추석 연휴 배송안내 (10/3 - 10/12)</a>
+                        </div>
+                    </div>
+                    <div class="lately-col">
+                        <h3 class="lately-title">혜택안내</h3>
+                        <div class="lately-sbj">
+                            <a href="" class="lately-anc">신규가입 혜택</a>
+                            <a href="" class="lately-anc">등급별혜택</a>
+                            <a href="" class="lately-anc">사업자회원 안내</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-menu">
+                <div class="row-c">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="" class="item-btn">브랜드 소개</a></li>
+                        <li class="menu-item"><a href="" class="item-btn">이용약관</a></li>
+                        <li class="menu-item"><a href="" class="item-btn">개인정보처리방침</a></li>
+                    </ul>
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="" class="item-btn">사업자 인증</a></li>
+                        <li class="menu-item"><a href="" class="item-btn">임직원 인증</a></li>
+                    </ul>
+                    <div class="affiliate">
+                        <div class="affiliate-in">
+                            <a href="#" class="affiliate-anc js-affiliate">계열사 바로가기</a>
+                            <ul class="affiliate-list custom-scroll">
+                                <li><a href="">동원F&amp;B</a></li>
+                                <li><a href="">동원시스템즈</a></li>
+                                <li><a href="">동원홈푸드</a></li>
+                                <li><a href="">동원데어리푸드</a></li>
+                                <li><a href="">동원팜스</a></li>
+                                <li><a href="">동원와인플러스</a></li>
+                                <li><a href="">동원리더스아카데미</a></li>
+                                <li><a href="">GNC</a></li>
+                                <li><a href="">동원몰</a></li>
+                                <li><a href="">동원 금천미트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-body">
+                <div class="row-c">
+                    <div class="addr-col">
+                        <h3 class="addr-title">(주)동원에프앤비</h3>
+                        <div class="addr-row">
+                            <span class="txt">대표이사 : 김성용</span>
+                            <span class="txt">본사 : 서울시 서초구 마방로 68 동원산업빌딩</span>
+                        </div>
+                        <div class="addr-row">
+                            <span class="txt">개인정보보호 책임자 : 조영부</span>
+                            <span class="txt">청소년보호 책임자 : 조영부</span>
+                        </div>
+                        <div class="addr-row">
+                            <span class="txt">사업자 등록번호 : 214-86-68729 <a href="">사업자 정보 확인</a></span>
+                            <span class="txt">통신 판매업 신고 : 제2003-서울서초-02306호</span>
+                        </div>
+                        <div class="addr-row">
+                            <span class="txt">호스팅 사업자 : 동원산업(주)</span>
+                        </div>
+                        <p class="copy">Copyright 2024 Dongwon F&amp;B KOREA. All Rights Reserved.</p>
+                    </div>
+
+                    <div class="cs-center">
+                        <h3 class="cs-title"><a href="">고객만족센터</a></h3>
+                        <strong class="cs-p-num">1644-6844</strong>
+                        <ul class="cs-list">
+                            <li>상담시간 AM 9:00 ~ PM 6:00</li>
+                            <li>점심시간 PM 12:00 ~ 1:00</li>
+                            <li>(토,일, 공휴일 휴무)</li>
+                        </ul>
+
+                        <span class="fax-email">팩스 : 02-589-4820 이메일 : thebanchan@dongwon.com</span>
+                    </div>
+
+                    <div class="mobile-down">
+                        <h3 class="mobile-title">모바일 앱 다운</h3>
+                        <div class="qr-code"><span class="img-alt"><img src="img/mobile_qrcode.jpg" alt=""></span></div>
+                        <ul class="sns-list">
+                            <li class="n1"><a href=""><span class="img-alt"><img src="img/ico/ico_instagram.png"
+                                            alt=""></span></a></li>
+                            <li class="n2"><a href=""><span class="img-alt"><img src="img/ico/ico_facebook.png"
+                                            alt=""></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-foot">
+                <div class="row-c">
+                    <div class="toss">
+                        <div class="toss-cont">
+                            <p class="txt">나이스페이 구매안전(에스크로) 서비스 가맹점 <a href="">가입 확인하기</a></p>
+                            <p class="guide">고객님의 안전거래를 위해 현금 등으로 결제 시 나이스페이의 구매안전 서비스를 이용하실 수 있습니다.</p>
+                        </div>
+                    </div>
+
+                    <ul class="more-service">
+                        <li class="n1"><span class="img-alt"><img src="img/more-service.jpg" alt=""></span></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
